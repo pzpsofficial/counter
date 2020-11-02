@@ -1,0 +1,44 @@
+@import 'setup';
+
+body {
+    color: $text;
+    min-height: 100vh;
+    background-color: $background;
+    font-weight: 700;
+    @include flex(column);
+
+    section {
+        @include flex(column);
+    
+        .counter .counter__licznik {
+            font-size: 8rem;
+            margin-bottom: 1rem;
+        }
+
+        .settings {
+            @include flex(column);
+        
+            select {
+                margin-bottom: 3rem;
+                background: $secondary;
+                border: none;
+                padding: .3rem 1rem;
+                color: $text;
+                font-weight: 700;
+            }
+
+            .btn {
+                font-weight: 700;
+                margin-bottom: 1rem;
+                padding: .4rem 2rem;
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                color: $text; 
+                background-color: $secondary;
+            }
+
+        }
+
+    }
+}

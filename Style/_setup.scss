@@ -1,0 +1,29 @@
+$background: #14213d;
+$text: #e5e5e5;
+$secondary: #fca311;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;    
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.plus {
+    color: green;
+}
+
+.minus {
+    color: red;
+}
